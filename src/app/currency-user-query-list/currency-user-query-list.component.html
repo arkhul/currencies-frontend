@@ -1,0 +1,19 @@
+<h2>CURRENCY USER QUERIES</h2>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th>NAME</th>
+    <th>DATE</th>
+    <th>CURRENCY</th>
+    <th>VALUE</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let currencyUserQuery of currencyUserQueries">
+    <td>{{currencyUserQuery.name}}</td>
+    <td>{{currencyUserQuery.date}}</td>
+    <td>{{currencyUserQuery.currency}}</td>
+    <td>{{currencyUserQuery.value}}</td>
+  </tr>
+  </tbody>
+</table>

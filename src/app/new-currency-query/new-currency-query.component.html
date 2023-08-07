@@ -1,0 +1,16 @@
+<div class="col-md-10 offset-md-3">
+  <h3 style="margin-top: 60px">CREATE NEW CURRENCY QUERY</h3>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label style="margin-top: 10px">Name</label>
+      <input type="text" class="form-control" id="name"
+             [(ngModel)]="currencyUserQuery.name" name="name" required/>
+      <label style="margin-top: 10px">Currency</label>
+      <select class="form-select" id="code"
+              [(ngModel)]="selected" name = "code">
+        <option *ngFor="let n of currencyCodes">{{n}}</option>
+      </select>
+      <button style="margin-top: 20px; margin-bottom: 50px" class="btn btn-success" type="submit">SUBMIT</button>
+    </div>
+  </form>
+</div>
